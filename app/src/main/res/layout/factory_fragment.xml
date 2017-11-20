@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        tools:text="@string/app_name"
+        android:layout_centerInParent="true"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:orientation="horizontal">
+
+       <Button
+           android:id="@+id/btn_simple_url_Loader"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:padding="@dimen/button_padding"
+           style="?attr/borderlessButtonStyle"
+           android:textColor="@color/colorAccent"
+           android:text="@string/run_simple_url_loader"/>
+
+       <Button
+           android:id="@+id/btn_advanced_url__Loader"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:padding="@dimen/button_padding"
+           style="?attr/borderlessButtonStyle"
+           android:textColor="@color/colorAccent"
+           android:text="@string/run_advanced_url_loader"/>
+
+   </LinearLayout>
+
+</RelativeLayout>

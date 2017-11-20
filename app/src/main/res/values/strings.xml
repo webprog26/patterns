@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PatternsTask</string>
+
+    <string name="patterns">Patterns</string>
+
+    <string name="factory">Factory</string>
+    <string name="singleton_builder">Singleton/ Builder</string>
+    <string name="bridge">Bridge</string>
+
+    <string name="run_simple_url_loader">Simple url loader</string>
+    <string name="run_advanced_url_loader">Advanced url loader</string>
+
+    <string name="build_user_instance">Build user instance</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="e_mail">E-mail</string>
+
+    <string name="patterns_in_action">Pattens in action</string>
+
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+
+    <string name="user_info">User info</string>
+
+    <string name="ordinary_user">Ordinary user</string>
+    <string name="privileged_user">Privileged user</string>
+
+    <string name="user_not_found">User not found</string>
+    <string name="create_user">Create user</string>
+</resources>

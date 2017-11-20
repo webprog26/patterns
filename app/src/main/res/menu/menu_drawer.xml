@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/patterns"
+        android:title="@string/patterns">
+        <menu>
+            <item
+                android:id="@+id/factory"
+                android:title="@string/factory"
+                android:icon="@drawable/ic_action_name"/>
+            <item
+                android:id="@+id/singleton_builder"
+                android:title="@string/singleton_builder"
+                android:icon="@drawable/ic_action_name"/>
+            <item
+                android:id="@+id/bridge"
+                android:title="@string/bridge"
+                android:icon="@drawable/ic_action_name"/>
+        </menu>
+    </item>
+</menu>
