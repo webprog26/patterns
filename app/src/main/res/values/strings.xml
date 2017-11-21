@@ -6,6 +6,7 @@
     <string name="factory">Factory</string>
     <string name="singleton_builder">Singleton/ Builder</string>
     <string name="bridge">Bridge</string>
+    <string name="observer">Observer</string>
 
     <string name="run_simple_url_loader">Simple url loader</string>
     <string name="run_advanced_url_loader">Advanced url loader</string>
@@ -27,4 +28,8 @@
 
     <string name="user_not_found">User not found</string>
     <string name="create_user">Create user</string>
+
+    <string name="observer_notification_title">Observer notification</string>
+    <string name="message_hint">Message text</string>
+    <string name="send_notification">Send notification</string>
 </resources>

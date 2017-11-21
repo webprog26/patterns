@@ -17,6 +17,7 @@ public interface SetFragmentStrategy {
     String FACTORY_FRAGMENT_TAG = "factory_fragment_tag";
     String SINGLETONE_BUILDER_FRAGMENT_TAG = "singleton_builder_fragment_tag";
     String BRIDGE_FRAGMENT_TAG = "bridge_fragment_tag";
+    String OBSERVER_FRAGMENT_TAG = "observer_fragment_tag";
 
     void setFragment(@NonNull final FragmentManager fragmentManager, final int id, @IdRes int parentLayoutRes, @Nullable final String tag);
 }

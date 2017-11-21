@@ -11,6 +11,7 @@ public interface FragmentFactory {
     int FACTORY_FRAGMENT_ID = 0;
     int SINGLETON_BUILDER_FRAGMENT_ID = 1;
     int BRIDGE_FRAGMENT_ID = 2;
+    int OBSERVER_FRAGMENT_ID = 3;
 
     BaseFragment getBaseFragment(final int fragmentId);
 }

@@ -16,6 +16,10 @@
                 android:id="@+id/bridge"
                 android:title="@string/bridge"
                 android:icon="@drawable/ic_action_name"/>
+            <item
+                android:id="@+id/observer"
+                android:title="@string/observer"
+                android:icon="@drawable/ic_action_name"/>
         </menu>
     </item>
 </menu>

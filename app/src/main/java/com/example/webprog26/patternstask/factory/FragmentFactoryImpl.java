@@ -2,6 +2,7 @@ package com.example.webprog26.patternstask.factory;
 
 import com.example.webprog26.patternstask.factory.interfaces.FragmentFactory;
 import com.example.webprog26.patternstask.fragments.BridgeFragment;
+import com.example.webprog26.patternstask.fragments.ObserverFragment;
 import com.example.webprog26.patternstask.fragments.SingletonBuilderFragment;
 import com.example.webprog26.patternstask.template.BaseFragment;
 import com.example.webprog26.patternstask.fragments.FactoryFragment;
@@ -27,6 +28,8 @@ public class FragmentFactoryImpl implements FragmentFactory {
                 return new SingletonBuilderFragment();
             case BRIDGE_FRAGMENT_ID:
                 return new BridgeFragment();
+            case OBSERVER_FRAGMENT_ID:
+                return new ObserverFragment();
             default:
                     throw new IllegalArgumentException("No appropriate fragment with such ID found");
         }

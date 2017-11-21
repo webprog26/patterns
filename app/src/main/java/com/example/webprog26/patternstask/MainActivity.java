@@ -97,6 +97,11 @@ public class MainActivity extends BaseActivity implements ActivityCallback{
                         fragmentTag = SetFragmentStrategy.BRIDGE_FRAGMENT_TAG;
                         setAppropriateFragment(fragmentId, fragmentTag);
                         return true;
+                    case R.id.observer:
+                        fragmentId = FragmentFactory.OBSERVER_FRAGMENT_ID;
+                        fragmentTag = SetFragmentStrategy.OBSERVER_FRAGMENT_TAG;
+                        setAppropriateFragment(fragmentId, fragmentTag);
+                        return true;
                     default:
                         return true;
                 }
