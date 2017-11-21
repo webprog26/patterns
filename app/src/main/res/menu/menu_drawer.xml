@@ -20,6 +20,10 @@
                 android:id="@+id/observer"
                 android:title="@string/observer"
                 android:icon="@drawable/ic_action_name"/>
+            <item
+                android:id="@+id/decorator"
+                android:title="@string/decorator"
+                android:icon="@drawable/ic_action_name"/>
         </menu>
     </item>
 </menu>

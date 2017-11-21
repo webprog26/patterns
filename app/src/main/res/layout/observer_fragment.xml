@@ -30,6 +30,7 @@
         style="?attr/borderlessButtonStyle"
         android:layout_alignParentBottom="true"
         android:text="@string/send_notification"
-        android:textColor="@color/colorAccent"/>
+        android:textColor="@color/colorAccent"
+        android:padding="@dimen/button_padding"/>
 
 </RelativeLayout>

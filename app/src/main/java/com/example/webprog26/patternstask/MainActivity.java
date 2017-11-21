@@ -79,29 +79,21 @@ public class MainActivity extends BaseActivity implements ActivityCallback{
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 mDrawerLayout.closeDrawers();
-                int fragmentId;
-                String fragmentTag;
                 switch (item.getItemId()) {
                     case R.id.factory:
-                        fragmentId = FragmentFactory.FACTORY_FRAGMENT_ID;
-                        fragmentTag = SetFragmentStrategy.FACTORY_FRAGMENT_TAG;
-                        setAppropriateFragment(fragmentId, fragmentTag);
+                        setAppropriateFragment(FragmentFactory.FACTORY_FRAGMENT_ID, SetFragmentStrategy.FACTORY_FRAGMENT_TAG);
                         return true;
                     case R.id.singleton_builder:
-                        fragmentId = FragmentFactory.SINGLETON_BUILDER_FRAGMENT_ID;
-                        fragmentTag = SetFragmentStrategy.SINGLETONE_BUILDER_FRAGMENT_TAG;
-                        setAppropriateFragment(fragmentId, fragmentTag);
+                        setAppropriateFragment(FragmentFactory.SINGLETON_BUILDER_FRAGMENT_ID, SetFragmentStrategy.SINGLETON_BUILDER_FRAGMENT_TAG);
                         return true;
                     case R.id.bridge:
-                        fragmentId = FragmentFactory.BRIDGE_FRAGMENT_ID;
-                        fragmentTag = SetFragmentStrategy.BRIDGE_FRAGMENT_TAG;
-                        setAppropriateFragment(fragmentId, fragmentTag);
+                        setAppropriateFragment(FragmentFactory.BRIDGE_FRAGMENT_ID, SetFragmentStrategy.BRIDGE_FRAGMENT_TAG);
                         return true;
                     case R.id.observer:
-                        fragmentId = FragmentFactory.OBSERVER_FRAGMENT_ID;
-                        fragmentTag = SetFragmentStrategy.OBSERVER_FRAGMENT_TAG;
-                        setAppropriateFragment(fragmentId, fragmentTag);
+                        setAppropriateFragment(FragmentFactory.OBSERVER_FRAGMENT_ID, SetFragmentStrategy.OBSERVER_FRAGMENT_TAG);
                         return true;
+                    case R.id.decorator:
+                        setAppropriateFragment(FragmentFactory.DECORATOR_FRAGMENT_ID, SetFragmentStrategy.DECORATOR_FRAGMENT_TAG);
                     default:
                         return true;
                 }
@@ -121,6 +113,6 @@ public class MainActivity extends BaseActivity implements ActivityCallback{
         new ReplaceFragmentStrategy().setFragment(getSupportFragmentManager(),
                 FragmentFactory.SINGLETON_BUILDER_FRAGMENT_ID,
                 getContainerIdRes(),
-                SetFragmentStrategy.SINGLETONE_BUILDER_FRAGMENT_TAG);
+                SetFragmentStrategy.SINGLETON_BUILDER_FRAGMENT_TAG);
     }
 }

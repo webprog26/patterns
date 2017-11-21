@@ -7,6 +7,7 @@
     <string name="singleton_builder">Singleton/ Builder</string>
     <string name="bridge">Bridge</string>
     <string name="observer">Observer</string>
+    <string name="decorator">Decorator</string>
 
     <string name="run_simple_url_loader">Simple url loader</string>
     <string name="run_advanced_url_loader">Advanced url loader</string>
@@ -32,4 +33,9 @@
     <string name="observer_notification_title">Observer notification</string>
     <string name="message_hint">Message text</string>
     <string name="send_notification">Send notification</string>
+
+    <string name="get_moving_car">Get moving car</string>
+    <string name="move_car_back">Move car back</string>
+
+    <string name="create_moving_car_first">Create moving car first</string>
 </resources>
