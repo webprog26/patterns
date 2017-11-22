@@ -28,6 +28,10 @@
                 android:id="@+id/visitor"
                 android:title="@string/visitor"
                 android:icon="@drawable/ic_action_name"/>
+            <item
+                android:id="@+id/adapter"
+                android:title="@string/adapter"
+                android:icon="@drawable/ic_action_name"/>
         </menu>
     </item>
 </menu>

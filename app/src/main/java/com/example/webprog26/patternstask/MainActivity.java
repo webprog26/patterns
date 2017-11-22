@@ -81,23 +81,26 @@ public class MainActivity extends BaseActivity implements ActivityCallback{
                 mDrawerLayout.closeDrawers();
                 switch (item.getItemId()) {
                     case R.id.factory:
-                        setAppropriateFragment(FragmentFactory.FACTORY_FRAGMENT_ID, SetFragmentStrategy.FACTORY_FRAGMENT_TAG);
-                        return true;
+                        return setAppropriateFragment(FragmentFactory.FACTORY_FRAGMENT_ID,
+                                SetFragmentStrategy.FACTORY_FRAGMENT_TAG);
                     case R.id.singleton_builder:
-                        setAppropriateFragment(FragmentFactory.SINGLETON_BUILDER_FRAGMENT_ID, SetFragmentStrategy.SINGLETON_BUILDER_FRAGMENT_TAG);
-                        return true;
+                        return setAppropriateFragment(FragmentFactory.SINGLETON_BUILDER_FRAGMENT_ID,
+                                SetFragmentStrategy.SINGLETON_BUILDER_FRAGMENT_TAG);
                     case R.id.bridge:
-                        setAppropriateFragment(FragmentFactory.BRIDGE_FRAGMENT_ID, SetFragmentStrategy.BRIDGE_FRAGMENT_TAG);
-                        return true;
+                        return setAppropriateFragment(FragmentFactory.BRIDGE_FRAGMENT_ID,
+                                SetFragmentStrategy.BRIDGE_FRAGMENT_TAG);
                     case R.id.observer:
-                        setAppropriateFragment(FragmentFactory.OBSERVER_FRAGMENT_ID, SetFragmentStrategy.OBSERVER_FRAGMENT_TAG);
-                        return true;
+                        return setAppropriateFragment(FragmentFactory.OBSERVER_FRAGMENT_ID,
+                                SetFragmentStrategy.OBSERVER_FRAGMENT_TAG);
                     case R.id.decorator:
-                        setAppropriateFragment(FragmentFactory.DECORATOR_FRAGMENT_ID, SetFragmentStrategy.DECORATOR_FRAGMENT_TAG);
-                        return true;
+                        return setAppropriateFragment(FragmentFactory.DECORATOR_FRAGMENT_ID,
+                                SetFragmentStrategy.DECORATOR_FRAGMENT_TAG);
                     case R.id.visitor:
-                        setAppropriateFragment(FragmentFactory.VISITOR_PATTERN_ID, SetFragmentStrategy.VISITOR_FRAGMENT_TAG);
-                        return true;
+                        return setAppropriateFragment(FragmentFactory.VISITOR_FRAGMENT_ID,
+                                SetFragmentStrategy.VISITOR_FRAGMENT_TAG);
+                    case R.id.adapter:
+                        return setAppropriateFragment(FragmentFactory.ADAPTER_FRAGMENT_ID,
+                                SetFragmentStrategy.ADAPTER_FRAGMENT_TAG);
                     default:
                         return true;
                 }
@@ -105,11 +108,13 @@ public class MainActivity extends BaseActivity implements ActivityCallback{
         });
     }
 
-    private void setAppropriateFragment(final int fragmentId, final String fragmentTag){
+    private boolean setAppropriateFragment(final int fragmentId, final String fragmentTag){
         if(fragmentId >= 0 && fragmentTag != null) {
             final SetFragmentStrategy strategy = new ReplaceFragmentStrategy();
             strategy.setFragment(getSupportFragmentManager(), fragmentId, getContainerIdRes(), fragmentTag);
+            return true;
         }
+        return false;
     }
 
     @Override

@@ -20,6 +20,7 @@ public interface SetFragmentStrategy {
     String OBSERVER_FRAGMENT_TAG = "observer_fragment_tag";
     String DECORATOR_FRAGMENT_TAG = "decorator_fragment_tag";
     String VISITOR_FRAGMENT_TAG = "visitor_fragment_tag";
+    String ADAPTER_FRAGMENT_TAG = "adapter_fragment_tag";
 
     void setFragment(@NonNull final FragmentManager fragmentManager, final int id, @IdRes int parentLayoutRes, @Nullable final String tag);
 }

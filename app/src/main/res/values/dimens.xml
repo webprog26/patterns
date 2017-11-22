@@ -7,4 +7,6 @@
 
     <dimen name="button_padding">8dp</dimen>
     <dimen name="edit_text_bottom_margin">8dp</dimen>
+
+    <dimen name="nested_scroll_view_vertical_margin">8dp</dimen>
 </resources>

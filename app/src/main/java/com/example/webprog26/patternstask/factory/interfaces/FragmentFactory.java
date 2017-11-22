@@ -13,7 +13,8 @@ public interface FragmentFactory {
     int BRIDGE_FRAGMENT_ID = 2;
     int OBSERVER_FRAGMENT_ID = 3;
     int DECORATOR_FRAGMENT_ID = 4;
-    int VISITOR_PATTERN_ID = 5;
+    int VISITOR_FRAGMENT_ID = 5;
+    int ADAPTER_FRAGMENT_ID = 6;
 
     BaseFragment getBaseFragment(final int fragmentId);
 }

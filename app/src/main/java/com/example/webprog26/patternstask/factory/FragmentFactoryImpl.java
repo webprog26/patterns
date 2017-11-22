@@ -1,6 +1,7 @@
 package com.example.webprog26.patternstask.factory;
 
 import com.example.webprog26.patternstask.factory.interfaces.FragmentFactory;
+import com.example.webprog26.patternstask.fragments.AdapterFragment;
 import com.example.webprog26.patternstask.fragments.BridgeFragment;
 import com.example.webprog26.patternstask.fragments.DecoratorFragment;
 import com.example.webprog26.patternstask.fragments.ObserverFragment;
@@ -34,8 +35,10 @@ public class FragmentFactoryImpl implements FragmentFactory {
                 return new ObserverFragment();
             case DECORATOR_FRAGMENT_ID:
                 return new DecoratorFragment();
-            case VISITOR_PATTERN_ID:
+            case VISITOR_FRAGMENT_ID:
                 return new VisitorFragment();
+            case ADAPTER_FRAGMENT_ID:
+                return new AdapterFragment();
             default:
                     throw new IllegalArgumentException("No appropriate fragment with such ID found");
         }

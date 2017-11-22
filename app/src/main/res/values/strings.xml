@@ -9,6 +9,7 @@
     <string name="observer">Observer</string>
     <string name="decorator">Decorator</string>
     <string name="visitor">Visitor</string>
+    <string name="adapter">Adapter</string>
 
     <string name="run_simple_url_loader">Simple url loader</string>
     <string name="run_advanced_url_loader">Advanced url loader</string>
@@ -40,4 +41,6 @@
 
     <string name="create_moving_car_first">Create moving car first</string>
     <string name="run_visitor">Run visitor</string>
+
+    <string name="run_adapter">Run adapter</string>
 </resources>
