@@ -94,6 +94,10 @@ public class MainActivity extends BaseActivity implements ActivityCallback{
                         return true;
                     case R.id.decorator:
                         setAppropriateFragment(FragmentFactory.DECORATOR_FRAGMENT_ID, SetFragmentStrategy.DECORATOR_FRAGMENT_TAG);
+                        return true;
+                    case R.id.visitor:
+                        setAppropriateFragment(FragmentFactory.VISITOR_PATTERN_ID, SetFragmentStrategy.VISITOR_FRAGMENT_TAG);
+                        return true;
                     default:
                         return true;
                 }

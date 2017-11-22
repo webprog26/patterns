@@ -8,6 +8,7 @@
     <string name="bridge">Bridge</string>
     <string name="observer">Observer</string>
     <string name="decorator">Decorator</string>
+    <string name="visitor">Visitor</string>
 
     <string name="run_simple_url_loader">Simple url loader</string>
     <string name="run_advanced_url_loader">Advanced url loader</string>
@@ -17,7 +18,7 @@
     <string name="age">Age</string>
     <string name="e_mail">E-mail</string>
 
-    <string name="patterns_in_action">Pattens in action</string>
+    <string name="patterns_in_action">Patterns in action</string>
 
     <string name="open_drawer">Open</string>
     <string name="close_drawer">Close</string>
@@ -38,4 +39,5 @@
     <string name="move_car_back">Move car back</string>
 
     <string name="create_moving_car_first">Create moving car first</string>
+    <string name="run_visitor">Run visitor</string>
 </resources>
